@@ -1,4 +1,4 @@
-music.setVolume(12)
+music.setVolume(100)
 let threshold = 8
 let distances = 100
 let prev_distances = 100
@@ -15,7 +15,7 @@ basic.forever(function () {
     if (distances < threshold && prev_distances < threshold) {
         pins.digitalWritePin(DigitalPin.P9, 1)
         pins.digitalWritePin(DigitalPin.P2, 0)
-        soundExpression.sad.play()
+        soundExpression.hello.play()
     } else {
         pins.digitalWritePin(DigitalPin.P9, 0)
         pins.digitalWritePin(DigitalPin.P2, 1)
