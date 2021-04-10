@@ -25,7 +25,7 @@ basic.forever(function () {
     PingUnit.Centimeters
     )
     serial.writeLine("distances: " + convertToText(distance))
-    basic.pause(200)
+    basic.pause(100)
     prev_distance = distance
 })
 basic.forever(function () {
